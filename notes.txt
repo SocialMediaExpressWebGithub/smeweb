@@ -1,0 +1,25 @@
+Breaking News
+
+Entertainment, Editors' Column
+
+Servics: Phone number, email, services-type, description. 
+
+IMG --> next IMAGE
+
+1.social media link s own color side under Digital headerc
+2. share button. : OK
+3. text area increase : OK
+4. insert more images.  : OK
+5. mobile view : ++ 3 more photos : VIEW images : OK
+6. Image Viewer. : OK
+7. view : under header -> share point : social links : 
+8. input text yellow border dark more daker : OK
+9. Loader added. : OK
+10. new date  : month date year : Wording OK
+11. logo round
+12. Admin post / edit style check 
+12. Home page image break 
+13. view catgory add categorty list
+14. Logo icons
+15  youtube 
+16. Video player.

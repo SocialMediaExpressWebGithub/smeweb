@@ -1,0 +1,244 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo-image {
+    width: 45px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.company-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    @apply hover:scale-105 transition;
+}
+
+.btn {
+    @apply px-4 py-2 rounded-md font-semibold hover:scale-105 transition;
+}
+
+
+/* form > div{
+    @apply flex flex-col gap-2;
+} */
+
+input, textarea, select, datetime-local, file{
+    @apply shadow-md px-10 py-2 border rounded-md border-amber-400;
+}
+
+
+/* card styles */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    @apply px-4 py-2 border rounded-md gap-3;
+  }
+
+  .card-info {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-content {
+    font-size: 0.9rem;
+  }
+  
+
+  .card img {
+    width: 550px;
+    height: 450px;
+    margin-right: 10px;
+    /* border-radius: 80%; */
+  }
+
+
+  /* styles/ScrollableDivStyles.css */
+/* Add this CSS to your stylesheet or CSS module */
+
+.scrollable-div {
+  height: 500px; /* Set the desired fixed height here */
+  overflow-y: scroll; /* Enable vertical scrolling when content exceeds the fixed height */
+  border: 0.5px ;
+  padding: 3px; /* Add padding to the scrollable div */
+  margin-top: 2px;
+  margin-left: auto;
+  border-radius: 1%;
+}
+
+.news-card {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(211, 58, 58, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.text-content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.read-more-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
+.arrow-icon {
+  margin-left: 8px;
+}
+
+
+.view-image {
+  width: 100%;
+  height: 500px; /* Set a specific height that maintains the aspect ratio */
+  object-fit: cover;
+  border-radius: 4px;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .view-image {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 80px);
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+
+
+/* Slider */
+.image-container {
+  max-width: 100%; /* Ensures the container doesn't exceed the viewport width */
+  overflow: auto; /* Enable horizontal and vertical scrolling if needed */
+  padding: 16px; /* Optional padding for spacing */
+}
+
+/* Define breakpoints for different screen sizes */
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%; /* For smaller screens, occupy the full width */
+    height: auto; /* Adjust height automatically based on content */
+  }
+}
+
+
+/* styles.module.css */
+.xl-icon {
+  font-size: 2rem; /* Adjust the value as needed */
+}
+
+
+.latest-news {
+  border-radius: 8px;
+  padding: 3px;
+  margin-bottom: 3px; /* Adds space below the collapsible section */
+  background-color: rgb(143, 109, 109); /* Background color for the content area */
+  box-shadow: 0 2px 4px rgba(61, 59, 59, 0.1); /* Example box shadow */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  background-color: #007bff; /* Background color for the header */
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  padding: auto;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.news-content {
+  /* Add styles for the content within the collapsible section */
+  padding: auto;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* .transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
+} */
+
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.hover\:bg-gray-200:hover {
+  background-color: #ac79d0; /* Replace with your desired color */
+}
